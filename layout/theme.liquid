@@ -310,7 +310,9 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ collections[0] }}
+      {% for  product in  all_products. %}
+        {{ product }}
+      {% endfor %}
       {{ content_for_layout }}
     </main>
 
